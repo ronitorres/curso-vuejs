@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js Primeiro Exemplo</title>
+
+</head>
+<body>
+
+<!--Renderização-->
+  <div id="app">
+
+      <h1>{{ message }}</h1>
+
+  </div>
+
+  <script src="vue.js"></script>
+
+
+  <!--Estruturação-->
+  <script>
+
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello World, i am using Vue JS',
+          idade: 34
+        }
+      })
+
+  </script>
+
+
+</body>
+</html>
